@@ -1,6 +1,6 @@
 # EOS-Post-Install-Guide
-Standard EndeavourOS Post Installation Guide (2026)
-It is encouraged to visit the EndeavourOS Wiki at https://discovery.endeavouros.com/
+* Standard EndeavourOS Post Installation Guide (2026)
+* It is encouraged to visit the EndeavourOS Wiki at https://discovery.endeavouros.com/
 
 ## Updating the system
 * Proceed to update the system using:
