@@ -18,6 +18,16 @@ sudo pacman -Syu
 ```
 * Avoid `sudo pacman -Sy` as it updates your local package database (-y) but does not update installed packages (-u), leading to dependencies mismatches, broken applications, and potentially a broken system
 
+### Recommended ways to install
+* If first installation of the session, before any update:
+```
+sudo pacman -Syu [package-name]
+```
+* If system is already updated:
+```
+sudo pacman -S
+```
+
 ## zram
 * Setup zram by installing `zram-generator`
 ```
