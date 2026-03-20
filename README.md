@@ -235,14 +235,6 @@ yay -S lib32-nvidia-580xx-utils
 yay -S lib32-nvidia-utils
 ```
 
-## Steam
-* Install Steam with:
-```
-sudo pacman -S steam
-```
-* Once installed, you may proceed to download games and just click on `Play`
-* It is commonly recommended to use `Proton-Experimental`, the default compatibility layer
-
 ## Mangohud
 * Mangohud and goverlay help you set GPU preferences like FPS cap
 * Install Mangohud and Goveray with:
@@ -253,4 +245,18 @@ sudo pacman -S mangohud lib32-mangohud goverlay
 * Activate as `environment variable` with:
 ```
 mangohud
+```
+
+## Steam
+* Install Steam with:
+```
+sudo pacman -S steam
+```
+* Once installed, you may proceed to download games and just click on `Play`
+* It is commonly recommended to use `Proton-Experimental`, the default compatibility layer
+
+## Nvidia environment variables
+* Some recommended environment variables to launch when using an Nvidia GPU
+```
+__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __VK_LAYER_NV_optimus=NVIDIA_only __GL_THREADED_OPTIMIZATIONS=1 mangohud %command%
 ```
