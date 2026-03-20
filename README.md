@@ -26,7 +26,7 @@ sudo pacman -Syu [package-name]
 ```
 * If system is already updated:
 ```
-sudo pacman -S
+sudo pacman -S [package-name]
 ```
 
 ## zram
