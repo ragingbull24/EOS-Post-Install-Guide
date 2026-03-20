@@ -147,7 +147,7 @@ yay -S brave-bin
 ```
 
 ## LibreOffice
-* Install LibreOffice with `latest features` with:
+* Install LibreOffice with `latest features` (recommended) with:
 ```
 sudo pacman -S libreoffice-fresh
 ```
