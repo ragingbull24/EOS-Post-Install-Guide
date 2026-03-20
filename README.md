@@ -146,6 +146,28 @@ yay -S google-chrome
 yay -S brave-bin
 ```
 
+## LibreOffice
+* Install LibreOffice with `latest features` with:
+```
+sudo pacman -S libreoffice-fresh
+```
+* Install LibreOffice `stable` with:
+```
+sudo pacman -S libreoffice-still
+```
+
+## StandardNotes (end-to-end encrypted notes)
+* Install end-to-end encrypted notes StandardNotes with:
+```
+yay -S standardnotes-bin
+```
+
+## VSCodium
+* Install VSCodium for software development with:
+```
+yay -S vscodium-bin
+```
+
 ## Zen kernel
 * Recommended for gaming setup
 * Install Linux Zen kernel for optimized performance with:
@@ -193,26 +215,4 @@ sudo pacman -S mangohud lib32-mangohud goverlay
 * Activate as `environment variable` with:
 ```
 mangohud
-```
-
-## LibreOffice
-* Install LibreOffice with `latest features` with:
-```
-sudo pacman -S libreoffice-fresh
-```
-* Install LibreOffice `stable` with:
-```
-sudo pacman -S libreoffice-still
-```
-
-## StandardNotes (end-to-end encrypted notes)
-* Install end-to-end encrypted notes StandardNotes with:
-```
-yay -S standardnotes-bin
-```
-
-## VSCodium
-* Install VSCodium for software development with:
-```
-yay -S vscodium-bin
 ```
