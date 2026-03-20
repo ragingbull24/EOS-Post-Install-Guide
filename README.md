@@ -9,7 +9,7 @@ It is encouraged to visit the EndeavourOS Wiki at https://discovery.endeavouros.
 yay
 ```
 
-### Recommended ways to update
+#### Recommended ways to update
 ```
 yay
 ```
@@ -19,7 +19,7 @@ sudo pacman -Syu
 ```
 * Avoid `sudo pacman -Sy` as it updates your local package database (-y) but does not update installed packages (-u), leading to dependencies mismatches, broken applications, and potentially a broken system
 
-### Recommended ways to install
+#### Recommended ways to install
 * If first installation of the session, before any update:
 ```
 sudo pacman -Syu [package-name]
