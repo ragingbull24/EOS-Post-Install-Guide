@@ -157,7 +157,7 @@ sudo pacman -S libreoffice-still
 ```
 
 ## StandardNotes (end-to-end encrypted notes)
-* Install end-to-end encrypted notes StandardNotes with:
+* Install end-to-end encrypted notes app `StandardNotes` with:
 ```
 yay -S standardnotes-bin
 ```
@@ -168,17 +168,53 @@ yay -S standardnotes-bin
 yay -S vscodium-bin
 ```
 
-## Zen kernel
+## LAMP stack
+* For web development with a LAMP stack (Linux, Apache, MySQL, PHP)
+* Install `apache` with:
+```
+sudo pacman -Syu apache
+```
+* Start `apache` service:
+```
+sudo systemctl start apache
+sudo systemctl enable apache
+sudo systemctl status apache
+```
+* Install `mysql` with:
+```
+sudo pacman -S mysql
+```
+* Start `mysql` service with:
+```
+sudo systemctl start mysqld
+sudo systemctl enable mysqld
+sudo systemctl status mysqld
+```
+* Secure the `mysql` installation with:
+```
+sudo mysql_secure_installation
+```
+* Connect to `mysql` as `root` user:
+```
+mysql -u root -p
+```
+* Install `php` and `php-apache` with:
+```
+sudo pacman -S php php-apache
+```
+* Test on http://localhost
+
+## Linux zen kernel
 * Recommended for gaming setup
-* Install Linux Zen kernel for optimized performance with:
+* Install `linux-zen` kernel for optimized performance with:
 ```
 sudo pacman -S linux-zen linux-zen-headers
 ```
-* Reboot to use the Zen kernel
+* Reboot to use the kernel:
 ```
 sudo reboot
 ```
-* The `linux-zen` kernel will be set as default, to change to previous `linux-kernel` use the **Advanced settings** at Boot
+* The `linux-zen` kernel will be set as default, to change to previous `linux` kernel use the **Advanced Settings** at **boot**
 
 ## Gaming setup
 * Recommended: `linux-zen` kernel
@@ -204,6 +240,8 @@ yay -S lib32-nvidia-utils
 ```
 sudo pacman -S steam
 ```
+* Once installed, you may proceed to download games and just click on `Play`
+* It is commonly recommended to use `Proton-Experimental`, the default compatibility layer
 
 ## Mangohud
 * Mangohud and goverlay help you set GPU preferences like FPS cap
