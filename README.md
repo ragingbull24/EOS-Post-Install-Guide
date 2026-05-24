@@ -99,6 +99,15 @@ sudo pacman -S linux-headers
 sudo pacman -S intel-ucode intel-media-driver ffmpeg libva-utils
 ```
 * Use `vainfo` to check multimedia info
+* To disable CPU Turbo:
+```
+echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
+```
+* Check if Turbo is On with:
+```
+cat /sys/devices/system/cpu/intel_pstate/no_turbo
+```
+* `0=enabled`, `1=disabled`
 
 ## Nvidia drivers
 * For **older** GPUs (Pascal, etc) use the following, for modern GPUs since RTX omit and proceed to the next
